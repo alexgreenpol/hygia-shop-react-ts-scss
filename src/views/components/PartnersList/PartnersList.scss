@@ -1,0 +1,19 @@
+@import "../../assets/styles/helpers/variables";
+
+.partners-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+
+    &__item {
+        text-align: center;
+        padding: 16px;
+        flex-basis: 33%;
+
+        @media (min-width: 1024px) {
+            flex-basis: 16.6%;
+        }
+    }
+}

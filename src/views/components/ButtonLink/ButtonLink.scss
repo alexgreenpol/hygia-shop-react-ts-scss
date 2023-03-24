@@ -1,0 +1,45 @@
+@import "../../assets/styles/helpers/variables";
+
+.btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    transition: opacity 0.3s;
+    padding: 14px 18px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &--primary {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+
+    &--secondary {
+        background-color: $secondary-color;
+        color: $white-color;
+    }
+
+    &--purpure {
+        background-color: $purpure-color;
+        color: $white-color;
+    }
+
+    &--s {
+        font-size: 1rem;
+    }
+
+    &--m {
+        font-size: 1.2rem;
+    }
+
+    &--l {
+        font-size: 1.4rem;
+    }
+
+    &--xl {
+        font-size: 1.6rem;
+    }
+}

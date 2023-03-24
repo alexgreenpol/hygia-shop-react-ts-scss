@@ -1,0 +1,75 @@
+@import "../../assets/styles/helpers/variables";
+
+.cart-table {
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+
+    &__row {
+        align-items: center;
+        border: 1px solid $text-color;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        @media (min-width: 1024px) {
+            padding: 0;
+            margin-bottom: 0;
+            border: 0;
+            border-bottom: 1px solid $text-color;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__col {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        max-width: 90px;
+        border: 1px solid $text-color;
+        margin-bottom: 10px;
+
+        @media (min-width: 1024px) {
+            border: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__quantity {
+        margin: 10px 0;
+
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
+
+        & .quantity__btn {
+            font-size: 1rem;
+            width: 50px;
+            height: 30px;
+        }
+
+        & .quantity__count {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__btn {
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+
+    &__total {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+    }
+}

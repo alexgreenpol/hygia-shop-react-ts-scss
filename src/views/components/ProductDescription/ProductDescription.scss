@@ -1,0 +1,41 @@
+@import "../../assets/styles/helpers/variables";
+
+.product-description {
+    &__image {
+        border: 1px solid $text-color;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
+
+    & .content {
+        padding: 0 30px;
+    }
+
+    & .price,
+    & .sale-price {
+        font-size: 3rem;
+    }
+
+    & .sale-price {
+        color: $secondary-color;
+    }
+
+    &.sale {
+        & .price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            margin-right: 20px;
+        }
+    }
+
+    & .btn:disabled {
+        background-color: $green-color;
+    }
+
+    & .quantity {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}

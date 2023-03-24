@@ -1,0 +1,31 @@
+@import "../../assets/styles/helpers/variables";
+
+.banner {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    min-height: 350px;
+
+    & * {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & p + a {
+        margin-top: 30px;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../assets/styles/helpers/variables";
+
+.notify-message {
+    padding: 10px;
+    border: 1px solid $text-color;
+    max-width: fit-content;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: opacity 3s;
+    line-height: 1.5;
+    background-color: $white-color;
+
+    &.invisible {
+        opacity: 0;
+    }
+
+    & button {
+        border: 0;
+        background-color: transparent;
+        margin-left: 20px;
+        color: $text-color;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}

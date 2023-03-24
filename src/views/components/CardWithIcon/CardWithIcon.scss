@@ -1,0 +1,27 @@
+.card-with-icon {
+    display: flex;
+    gap: 20px;
+
+    &__img {
+        height: 80px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        margin: 0;
+    }
+
+    & p:last-child {
+        margin-bottom: 0;
+    }
+}

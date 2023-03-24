@@ -1,0 +1,20 @@
+@import "../../assets/styles/helpers/variables";
+
+.categories-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    & a {
+        text-transform: uppercase;
+        background-color: $secondary-color;
+        color: $white-color;
+        display: inline-block;
+        padding: 5px 10px;
+
+        &.active {
+            background-color: $purpure-color;
+        }
+    }
+}

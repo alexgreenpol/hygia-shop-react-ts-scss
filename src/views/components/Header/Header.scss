@@ -1,0 +1,75 @@
+@import "../../assets/styles/helpers/variables";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white-color;
+    z-index: 9999;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+    padding: 30px 0;
+
+    &.toggle {
+        max-height: fit-content;
+    }
+
+    & .pure-g {
+        align-items: center;
+    }
+}
+
+.header.toggle {
+    max-height: fit-content;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    & a {
+        color: $primary-color;
+        font-weight: 600;
+
+        &:hover,
+        &.active {
+            color: $secondary-color;
+        }
+    }
+}
+
+.header-cart {
+    position: relative;
+    line-height: 0;
+
+    & img {
+        max-width: 30px;
+    }
+
+    &__counter {
+        position: absolute;
+        top: 0;
+        right: -15px;
+        background-color: $secondary-color;
+        color: $white-color;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.logo-link {
+    line-height: 0;
+}

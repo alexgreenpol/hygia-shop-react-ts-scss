@@ -1,0 +1,7 @@
+.products {
+    &--recent {
+        & .products__item {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import "../../assets/styles/helpers/variables";
+
+.product-card {
+    border: 1px solid $milk-color;
+    padding: 30px;
+
+    &__image {
+        overflow: hidden;
+        height: 300px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__content {
+        border-top: 1px solid $milk-color;
+        padding-top: 30px;
+
+        & .title {
+            margin-bottom: 20px;
+        }
+
+        & .price {
+            color: $text-color;
+        }
+
+        & .sale-price {
+            color: $secondary-color;
+        }
+
+        & .price,
+        & .sale-price {
+            font-size: 1.3rem;
+            margin-right: 10px;
+        }
+    }
+
+    &.sale {
+        & .price {
+            text-decoration: line-through;
+            font-size: 1rem;
+        }
+
+        & .sale-price {
+            font-size: 1.5rem;
+        }
+    }
+}
